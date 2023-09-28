@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(227, 227, 242);
+}
+/* Add image backgroudn  */
+.container {
+  background: url(image/image7.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+/* decorate h1 (the heading Title ) */
+.Heading1 {
+  width: 100%;
+  padding: 1rem;
+  object-fit: cover;
+  text-align: center;
+  color: rgb(247, 239, 239);
+  margin-top: 2rem;
+}
+label {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  max-width: 100%;
+  display: flex;
+  color: white;
+}
+form {
+  max-width: 100%;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+
+button {
+  margin-top: 10px;
+  background-color: rgb(42, 37, 23);
+  padding: 6px;
+  border-radius: 5px;
+  margin-left: 7px;
+  margin-bottom: 15px;
+  color: white;
+}
+input {
+  max-width: 90%;
+  padding-top: 18px;
+  border-radius: 9px;
+  width: 24rem;
+  margin: 5px;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+}
+
+.table1 {
+  /* font-family: arial, sans-serif;
+  border-collapse: collapse; */
+  max-width: 98%;
+}
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+}
+tr {
+  text-align: center;
+  color: rgb(4, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(137, 163, 175);
+}
+
+#delete {
+  background-color: red;
+}
+#addbook {
+  background-color: rgb(28, 140, 8);
+}
+tr {
+  transition: all 0.25s ease-in-out;
+}
+tr:hover {
+  background-color: rgb(145, 160, 238);
+  cursor: pointer;
+}
+tr {
+  white-space: wrap;
+}
+@media screen and (max-width: 1143px) {
+  body {
+    background-color: #d2d5a8;
+  }
+
+  label {
+    color: black;
+  }
+  th {
+    color: black;
+  }
+}

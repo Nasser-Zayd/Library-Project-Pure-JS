@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Heading1"><h1>Library Managemet System</h1></div>
+      <br />
+      <form>
+        <div>
+          <label>Book Title : </label>
+          <input id="book-title" type="text" placeholder="Enter book title" />
+        </div>
+        <div>
+          <label>Author : </label>
+          <input id="Author" type="text" placeholder="Enter Author Name" />
+        </div>
+        <div>
+          <label>Year : </label>
+          <input id="book-year" type="text" placeholder="Enter Year" />
+        </div>
+        <div>
+          <label>Book Category : </label>
+          <input
+            id="book-Category"
+            type="text"
+            placeholder="Enter book Category"
+          />
+        </div>
+        <button type="button" id="addbook">Add Book</button>
+      </form>
+      <div class="table1">
+        <table id="myTable">
+          <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Book Category</th>
+            <th>Action</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
