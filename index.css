@@ -1,7 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
+  overflow-x: hidden;
+
   background-color: rgb(227, 227, 242);
 }
 /* Add image backgroudn  */
@@ -10,7 +18,7 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
+  background-size: 100%;
 }
 
 .container {
@@ -21,6 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   white-space: nowrap;
+  overflow-x: hidden;
 }
 /* decorate h1 (the heading Title ) */
 .Heading1 {
@@ -31,6 +40,7 @@ body {
   color: rgb(247, 239, 239);
   margin-top: 2rem;
 }
+
 label {
   font-size: 20px;
   font-weight: bold;
@@ -43,7 +53,7 @@ form {
   max-width: 100%;
   align-items: center;
   margin-left: 1rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 button {
@@ -67,10 +77,13 @@ input {
 }
 
 .table1 {
-  /* font-family: arial, sans-serif;
-  border-collapse: collapse; */
-  max-width: 98%;
+  max-width: 90%;
 }
+#myTable {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 th {
   border: 1px solid black;
   text-align: center;
@@ -113,5 +126,11 @@ tr {
   }
   th {
     color: black;
+  }
+  .Heading1 h1 {
+    font-size: 1.5rem;
+  }
+  .table1 {
+    max-width: fit-content;
   }
 }
