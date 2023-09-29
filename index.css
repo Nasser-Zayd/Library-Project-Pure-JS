@@ -78,6 +78,7 @@ input {
 
 .table1 {
   max-width: 90%;
+  margin: 12px;
 }
 #myTable {
   max-width: 100%;
