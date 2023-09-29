@@ -67,12 +67,12 @@ button {
 }
 input {
   max-width: 90%;
-  padding-top: 18px;
+  padding: 13px;
   border-radius: 9px;
   width: 24rem;
   margin: 5px;
   align-items: center;
-  text-align: center;
+  text-align: left;
   font-size: large;
 }
 
