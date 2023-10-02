@@ -106,6 +106,12 @@ tr:nth-child(even) {
 }
 #addbook {
   background-color: rgb(28, 140, 8);
+  border-color: rgb(5, 159, 15);
+}
+#SaveChange {
+  background-color: rgb(116, 25, 36);
+  padding: 7px;
+  border-color: rgb(10, 10, 10);
 }
 tr {
   transition: all 0.25s ease-in-out;
@@ -119,7 +125,7 @@ tr {
 }
 @media screen and (max-width: 1143px) {
   body {
-    background-color: #d2d5a8;
+    /* background-color: #d2d5a8; */
   }
 
   label {

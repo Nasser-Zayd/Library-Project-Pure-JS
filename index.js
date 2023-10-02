@@ -9,21 +9,16 @@ function CheckEmptyInput() {
     bookYear = document.getElementById("book-year").value,
     bookCategory = document.getElementById("book-Category").value;
 
-  if (bookTitle === "") {
-    alert("Book Title can not Be Empty");
-    isEmtpy = true;
-  } else if (Author === "") {
-    alert("Author Name can not Be Empty");
-    isEmtpy = true;
-  }
-  if (bookYear === "") {
-    alert("Book Year can not Be Empty");
+  if (
+    bookTitle === "" ||
+    Author === "" ||
+    bookYear === "" ||
+    bookCategory === ""
+  ) {
+    alert("Input Can't Empty Please Fill 🤦🏼🤷☀️ ");
     isEmtpy = true;
   }
-  if (bookCategory === "") {
-    alert("Book Category can not Be Empty");
-    isEmtpy = true;
-  }
+
   return isEmtpy;
 }
 // Add Th and Tr  to the table with delete and Edit button fields
@@ -69,33 +64,20 @@ function selectedRowToInput() {
 }
 selectedRowToInput();
 
-// Edit button
-function editData(button) {
-  let row = button.parentNode.parentNode;
+// Save change button and function
+const saveChange = document.getElementById("SaveChange");
+saveChange.addEventListener("click", function (button) {
+  var booktitle = document.getElementById("book-title").value,
+    author = document.getElementById("Author").value,
+    bookyear = document.getElementById("book-year").value,
+    bookcategory = document.getElementById("book-Category").value;
 
-  let bookTitle = row.cells[0];
-  let Author = row.cells[1];
-  let bookYear = row.cells[2];
-  let bookCategory = row.cells[3];
-
-  // Prompt the user to enter updated values
-  let booktitle = prompt("Enter the updated name:", bookTitle.innerHTML);
-  let author = prompt("Enter the updated email:", Author.innerHTML);
-  let bookyear = prompt(
-    "Enter the updated mobile details:",
-    bookYear.innerHTML
-  );
-  let bookcategory = prompt(
-    "Enter the updated address:",
-    bookCategory.innerHTML
-  );
-
-  // Update the cell contents with the new values
-  bookTitle.innerHTML = booktitle;
-  Author.innerHTML = author;
-  bookYear.innerHTML = bookyear;
-  bookCategory.innerHTML = bookcategory;
-}
+  table.rows[rIndex].cells[0].innerHTML = booktitle;
+  table.rows[rIndex].cells[1].innerHTML = author;
+  table.rows[rIndex].cells[2].innerHTML = bookyear;
+  table.rows[rIndex].cells[3].innerHTML = bookcategory;
+  clearInputs();
+});
 
 function deleteData(button) {
   // Get the parent row of the clicked button
